@@ -1,8 +1,3 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {};
-
-// export default nextConfig;
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
@@ -13,10 +8,11 @@ const nextConfig = {
       ],
     },
     env: {
-      SANITY_PROJECT_ID: process.env.SANITY_PROJECT_ID || 'your-sanity-project-id', // Add your Sanity project ID here
-      SANITY_DATASET: process.env.SANITY_DATASET || 'your-dataset-name', // Add your dataset name here
-      SANITY_TOKEN: process.env.SANITY_TOKEN || 'your-sanity-token', // Add your Sanity token here
+      NEXT_PUBLIC_SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+      NEXT_PUBLIC_SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET,
+      SANITY_API_TOKEN: process.env.SANITY_API_TOKEN,
     },
   };
   
   export default nextConfig;
+  
